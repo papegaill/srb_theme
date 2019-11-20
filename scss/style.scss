@@ -1,0 +1,24 @@
+// Importing mixins
+@import "mixins";
+
+// Default variables.
+@import "default-variables";
+
+// Bootstrap Framework.
+@import '../bootstrap/assets/stylesheets/bootstrap';
+
+// Base-theme overrides.
+@import 'drupal-bootstrap';
+
+// base
+@import 'base/global';
+
+// Layout
+@import 'layout/container';
+@import 'layout/header';
+@import 'layout/footer';
+
+// Components
+@import "components/logo";
+@import "components/main-navigation";
+@import "components/sections";

@@ -1,0 +1,10 @@
+# Ignore editor and IDE metadata.
+# -------------------------------
+*.sublime-project
+*.sublime-workspace
+.idea/
+nbproject/
+
+# Ignore vendored libs.
+# -----------------------
+/node_modules

@@ -1,0 +1,51 @@
+// Section section--hp-2.
+.section--hp-2  {
+  .section--hp-2-left {
+    background: url(../images/bg_block_yellow.jpg) top left no-repeat;
+    background-size: 90% 100%;
+    padding-top: 60px;
+    padding-bottom: 72px;
+
+    &:after {
+      background: url("../images/block-bottom.svg") left bottom;
+      background-size: cover;
+      display: block;
+      height: 43px;
+      content: '';
+      margin: 0 -15px -2px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    > .region {
+      padding: 0 60px 0 25px;
+    }
+
+    h2 { 
+      display: inline-block;
+      margin: 0 65px 15px -40px;
+      border-bottom: solid 1px darken($blue-dark, 20%);
+      padding-left: 40px;
+    }
+  }
+  .section--hp-2-right {
+    padding: 60px 0 0 0;
+
+    .region-content {
+      padding-right: 30px;
+      h2 {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-md-min) {
+  .section--hp-2 .section--hp-2-left {
+    background-size: cover;
+  }
+  .section--hp-2 .section--hp-2-right {
+    padding: 60px 30px 0 30px;
+  }
+}

@@ -1,0 +1,27 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+
+name: 'SRB Bootstrap Sass'
+description: 'A Drupal Bootstrap 3 based sub-theme.'
+package: 'Bootstrap'
+
+regions:
+  header_first: 'Header First'
+  header_second: 'Header Second'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  sidebar_first: 'Sidebar First'
+  content: 'Content'
+  sidebar_second: 'Sidebar Right'
+  footer_first: 'Footer First'
+  footer_second: 'Footer Second'
+  footer_third: 'Footer Third'
+  footer_forth: 'Footer Forth'
+  footer_bottom: 'Footer Bottom'
+  disabled: 'Disabled'
+
+libraries-extend:
+  bootstrap/framework:
+    - srb/framework

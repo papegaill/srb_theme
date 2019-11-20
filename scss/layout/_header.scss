@@ -1,0 +1,18 @@
+.header {
+  border: none;
+  position: relative;
+  background-color: rgba(255,255,255,1);
+  background-image: url(../images/line.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  z-index: 100;
+  margin-top: 0;
+
+  @include breakpoint-max(phone) {
+    margin-top: 15px;
+  }
+}
+  
+.header .container-fluid {
+  padding-bottom: 17px;
+}

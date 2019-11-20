@@ -1,0 +1,52 @@
+// Breakpoints
+@mixin breakpoint-min($point) {
+  @if $point == lg or $point == lg-desktop {
+    @media (min-width: $screen-lg-min) {
+      @content;
+    }
+  }
+
+  @if $point == md or $point == desktop {
+    @media (min-width: $screen-md-min) {
+      @content;
+    }
+  }
+
+  @if $point == sm or $point == tablet {
+    @media (min-width: $screen-sm-min) {
+      @content;
+    }
+  }
+
+  @else if $point == xs or $point == phone {
+    @media (min-width: $screen-xs-min)  {
+      @content;
+    }
+  }
+}
+
+@mixin breakpoint-max($point) {
+  @if $point == md or $point == desktop {
+    @media (max-width: $screen-md-max) {
+      @content;
+    }
+  }
+
+  @if $point == sm or $point == tablet {
+    @media (max-width: $screen-sm-max) {
+      @content;
+    }
+  }
+
+  @if $point == xs or $point == phone {
+    @media (max-width: $screen-xs-max) {
+      @content;
+    }
+  }
+
+  @else if $point == xxs or $point == sm-phone {
+    @media (max-width: $screen-xxs-max)  {
+      @content;
+    }
+  }
+}

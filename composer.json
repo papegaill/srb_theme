@@ -1,0 +1,9 @@
+{
+  "name": "papegaill/srb_theme",
+  "description": "SRB Drupal 8 theme built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+  "type": "drupal-theme",
+  "require": {
+      "drupal/bootstrap": "^3.20"
+  }
+}
+  

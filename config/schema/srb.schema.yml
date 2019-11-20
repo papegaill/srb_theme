@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the srb theme.
+
+srb.settings:
+  type: theme_settings
+  label: 'SRB settings'
