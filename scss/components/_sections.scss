@@ -6,18 +6,6 @@
     padding-top: 60px;
     padding-bottom: 72px;
 
-    &:after {
-      background: url("../images/block-bottom.svg") left bottom;
-      background-size: cover;
-      display: block;
-      height: 43px;
-      content: '';
-      margin: 0 -15px -2px;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-    }
-
     > .region {
       padding: 0 60px 0 25px;
     }
@@ -43,7 +31,7 @@
 
 @media (max-width: $screen-md-min) {
   .section--hp-2 .section--hp-2-left {
-    background-size: cover;
+    background-size: 100% 100%;
   }
   .section--hp-2 .section--hp-2-right {
     padding: 60px 30px 0 30px;
