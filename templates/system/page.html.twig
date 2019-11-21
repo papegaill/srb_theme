@@ -171,30 +171,32 @@
 
 {% block footer %}
   <footer class="footer">
-    <div class="{{ container }}">
-      <div class="row">
-      {% if page.footer_first %}
-        <div class="footer__first col-sm-3">
-          {{ page.footer_first }}
+    {% if page.footer_first or page.footer_second or page.footer_third or page.footer_forth %}
+      <div class="footer_top_wrapper {{ container }}">
+        <div class="row">
+        {% if page.footer_first %}
+          <div class="footer__first col-sm-3">
+            {{ page.footer_first }}
+          </div>
+        {% endif %}
+        {% if page.footer_second %}
+          <div class="footer__second col-sm-3">
+            {{ page.footer_second }}
+          </div>
+        {% endif %}
+        {% if page.footer_third %}
+          <div class="footer__third col-sm-3">
+              {{ page.footer_third }} 
+          </div>
+        {% endif %}
+        {% if page.footer_forth %}
+          <div class="footer__forth col-sm-3">
+            {{ page.footer_forth }}
+          </div>
+        {% endif %}
         </div>
-      {% endif %}
-      {% if page.footer_second %}
-        <div class="footer__second col-sm-3">
-          {{ page.footer_second }}
-        </div>
-      {% endif %}
-      {% if page.footer_third %}
-        <div class="footer__third col-sm-3">
-            {{ page.footer_third }} 
-        </div>
-      {% endif %}
-      {% if page.footer_forth %}
-        <div class="footer__forth col-sm-3">
-          {{ page.footer_forth }}
-        </div>
-      {% endif %}
       </div>
-    </div>
+    {% endif %}
     <div class="footer_bottom_wrapper">
       <div class="{{ container }}">
         <div class="footer__bottom">
